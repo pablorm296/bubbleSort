@@ -4,7 +4,7 @@ using namespace Rcpp;
 //Function to swap two elements in an array
 void swap(NumericVector array, int a, int b)
 {
-  float a_foo = array[a];
+  double a_foo = array[a];
   array[a] = array[b];
   array[b] = a_foo;
 }
@@ -20,8 +20,8 @@ NumericVector bubbleSort(NumericVector x) {
         //For every element in vector x (excluding the last i-1 elements)
         for (int j = 0; j < n - i -1; j++)
         {
-          float a = x[j];
-          float b = x[j+1];
+          double a = x[j];
+          double b = x[j+1];
           
           //if a > b, perform a swap in the array
           if (a > b) 
