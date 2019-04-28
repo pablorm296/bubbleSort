@@ -9,7 +9,7 @@ void swap(NumericVector array, int a, int b)
   array[b] = a_foo;
 }
 
-//Function to perform a bubble sort on an
+//Function to perform a bubble sort on an array x
 // [[Rcpp::export]]
 NumericVector bubbleSort(NumericVector x) {
     //Get size of vector x
