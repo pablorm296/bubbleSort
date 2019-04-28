@@ -18,7 +18,7 @@ NumericVector bubbleSort(NumericVector x) {
     for (int i = 0; i < n; i++)
     {
         //For every element in vector x (excluding the last i-1 elements)
-        for (int j = 0; j < n - i -1; j++)
+        for (int j = 0; j < n - i - 1; j++)
         {
           double a = x[j];
           double b = x[j+1];
